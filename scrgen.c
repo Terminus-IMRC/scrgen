@@ -15,6 +15,7 @@ int main(int argc, char* argv[])
 	if(argc != 4){
 		fprintf(stderr, "%s: Invalid the arguments.\n", argv[0]);
 		fprintf(stderr, "Specified only %d arguments.\n", argc-1);
+		fprintf(stderr, "E.g., %s [wcr file] [rcr file] [scr file]\n", argv[0]);
 		exit(EXIT_FAILURE);
 	}
 	wcr=fopen(argv[1], "r");
